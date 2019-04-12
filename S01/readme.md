@@ -5,6 +5,7 @@
 * characters `a-z`, `A-Z`, `0-9`, `_`
 * first char shall not be `digits` 
 * *variables and functions* : lower case letters, in `snake_case_format`
+* do not use predefined names (function names, or keywords)
 
 | is valid? |  varname        |
 |:--------- | :---------------| 
@@ -14,8 +15,3 @@
 |  OK         |  `_my_var`               |
 |  YES      |  `_____`               |
 |  absolutely not recommended         |   `متغیر`|
-|           |                 |
-|           |                 |
-|           |                 |
-
- 
