@@ -1,4 +1,4 @@
-numbers = [1, 2, 3, -10, 4, 5, 6, 7, 8]
+numbers = (1, 2, 3, -10, 4, 5, 6, 7, 8)
 # sum , len
 sum_vals = sum(numbers)
 length = len(numbers)
