@@ -1,5 +1,6 @@
-if True:
-    print("hi")
-    print("hello again")
+num = 57
 
-print("outside of if!")
+if num % 2 == 0:
+    print("even")
+else:
+    print("it's odd")
