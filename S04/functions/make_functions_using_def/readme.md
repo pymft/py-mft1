@@ -1,3 +1,7 @@
+### 
+[jeff knupp's blog post : how to write better functions in python ](https://jeffknupp.com/blog/2018/10/11/write-better-python-functions/)
+
+
 ## question: 
 [wiki page](https://en.wikipedia.org/wiki/Pascal%27s_triangle)
 ```
