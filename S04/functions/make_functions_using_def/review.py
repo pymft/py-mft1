@@ -1,4 +1,3 @@
-
 def f_2(x):
     if x % 2 == 0:
         res = x ** 2
@@ -8,10 +7,7 @@ def f_2(x):
     return res
 
 
-
-
 num = 10
-
 
 print(f_2(10))
 print(f_2(5))
