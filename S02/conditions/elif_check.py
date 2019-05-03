@@ -6,7 +6,7 @@ elif True:
 elif True:
     print("4k+2")
 else:
-    print("3k+3")
+    print("4k+3")
 
 num = 59
 if True:
