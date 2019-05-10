@@ -23,5 +23,9 @@ def pascal_row(n):
     return row
 
 
-for i in range(10):
-    print(pascal_row(i))
+def pascal(n):
+    for i in range(n):
+        print(pascal_row(i))
+
+
+print(pascal(10))

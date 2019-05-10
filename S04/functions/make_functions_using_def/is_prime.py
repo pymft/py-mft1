@@ -12,6 +12,11 @@ def is_prime(n):
 
 
 def is_prime_2(n):
+    """
+
+    :param n:
+    :return:
+    """
     for i in range(2, n):
         if n % i == 0:
             return False
@@ -21,6 +26,14 @@ def is_prime_2(n):
 def is_prime_3(n):
     """
     check prime numbers, a bit faster than before
+
+    examples
+    --------
+    >>> is_prime_3(101)
+    True
+    >>> is_prime_3(10)
+    False
+
     :param n:
     :return:
     """
