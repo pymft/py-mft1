@@ -1,12 +1,13 @@
 def unique_words(text):
     for c in ".,()":
         text = text.replace(c, " ")
+
     words = text.lower().split()
 
     uniques = list(set(words))
-    repeats = {}
+    repeats = []
     for u in uniques:
-        repeats[u] = words.count(u)
+        repeats.append([u, words.count(u)])
     return repeats
 
 
@@ -25,5 +26,10 @@ the algorithm. When the list is already sorted
   sorted (having a small number of inversions)."""
 
 res = unique_words(text)
+f = lambda x: x[1]
 
-print(res['the'])
+mx = max(res, key=f)
+print(mx)
+
+res.sort(key=f, reverse=True)
+print(res)
