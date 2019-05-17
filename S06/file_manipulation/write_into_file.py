@@ -1,0 +1,6 @@
+f = open('output.txt', mode="w")
+f.write("hi\n")
+f.write("hi\n")
+f.write("hi\n")
+f.write("hi\n")
+f.write("hi\n")
