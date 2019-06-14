@@ -1,0 +1,6 @@
+import collections
+
+collections.OrderedDict
+collections.namedtuple
+collections.defaultdict
+collections.Counter

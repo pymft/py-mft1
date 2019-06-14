@@ -1,0 +1,1 @@
+[link to collections](../stdlib/collections_lib)
