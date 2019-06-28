@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><meta charset="UTF-8">
+<style>
+
+</style>
+</head>
+<body>
+<div class="row flex-xl-nowrap">
+<div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    {% if bmi %}
+        {%if bmi <18 %}
+            <h1 style="color:red">{{ bmi }}</h1>
+            <div class="alert alert-primary" role="alert">
+                overweight
+            </div>
+        {%elif bmi <25 %}
+            <h1 style="color:green">{{ bmi }}</h1>
+            <div class="alert alert-success" role="alert">
+                overweight
+            </div>
+
+        {% else %}
+            <h1 style="color:yellow">{{ bmi }}</h1>
+            <div class="alert alert-primary" role="warning">
+                overweight
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <a href="/result"> result </a>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Weight</td>
+                <td>
+                    <input name="weight">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Height</td>
+                <td>
+                    <input name="height">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</div></div>
+
+</body>
+</html>

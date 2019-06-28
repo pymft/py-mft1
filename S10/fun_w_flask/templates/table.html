@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table style='width:100%'>
+    {% for i in range(rows) %}
+        <tr>
+            {%for j in range(cols) %}
+            {% if i > j %} <td style="background-color:red"> {% else %} <td>{% endif %}
+                    {{ i * j }}
+                </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
