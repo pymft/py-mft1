@@ -3,12 +3,15 @@ import urllib.request
 
 
 class Browser:
-    instances = []
+    instances = {}
+
+    def __new__(cls, url):
+        if url in cls.instances:
+            return cls.instances[url]
+        return super().__new__(cls)
 
     def __init__(self, url):
-        if url in [s.url for s in self.instances]:
-            print("duplicated url", url)
-        self.instances.append(self)
+        self.instances[url] = self
         self.__url = url
         self.__text = None
 
@@ -31,12 +34,7 @@ class Browser:
         return [Browser(r) for r in res]
 
 
-
-
-
-
-
-
 b = Browser('https://www.python.org')
 c = Browser('https://www.python.org')
 print(b.get_links)
+print(c.get_links)

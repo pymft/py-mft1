@@ -1,10 +1,18 @@
 class Sample:
-    def __new__(cls, *args, **kwargs):
+    instances = {}
+
+    def __new__(cls, name):
+        if name in cls.instances:
+            return cls.instances[name]
         return super().__new__(cls)
 
-    def __init__(self, a):
-        self.a = a
+    def __init__(self, name):
+        self.name = name
+        self.instances[name] = self
 
 
-s = Sample(1)
-print(s.a)
+a = Sample("A")
+b = Sample("B")
+
+print(id(a))
+print(id(b))

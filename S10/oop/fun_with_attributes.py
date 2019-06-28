@@ -7,4 +7,8 @@ class MeaninglessTuple(tuple):
 
 
 tup = MeaninglessTuple((1, 2, 3, 4))
-tup.__getattribute__("whatever")
+
+print(tup._1)
+
+# tup.__getattribute__('_1')
+# tup[1]

@@ -2,10 +2,13 @@ class Sample:
     def __init__(self, name):
         self.name = name
 
-
     def __call__(self):
         return self.name
 
 
-s1 = Sample("Hello")
-print(s1())
+insatnce1 = Sample("Hello")
+insatnce2 = Sample("Hi")
+res = insatnce1()
+print(res)
+res = insatnce2()
+print(res)
